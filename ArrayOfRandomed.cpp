@@ -15,7 +15,7 @@ float randomto(int i)
 
 int main()
 {
-    float procentForStopping = 0.3;
+    float n = 0.3;
     std::vector<float> X;
     int i = 0;
     do
@@ -23,7 +23,7 @@ int main()
         auto a = randomto(i);
         
         X.push_back(a);
-        if (a < procentForStopping) //when finding number < procentForStopping stop generating rand numbers
+        if (a < n) //when finding number < n stop generating rand numbers
         {
             break;
         }
